@@ -34,7 +34,6 @@ public interface ReferenceCounted {
      * Returns the reference count of this object.  If {@code 0}, it means this object has been deallocated.
      */
     int refCnt();
-
     /**
      * Increases the reference count by {@code 1}.
      */

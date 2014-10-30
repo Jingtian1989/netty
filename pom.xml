@@ -439,6 +439,7 @@
     <module>microbench</module>
     <module>all</module>
     <module>tarball</module>
+      <module>rpc</module>
   </modules>
 
   <dependencyManagement>
@@ -500,11 +501,10 @@
         <groupId>${project.groupId}</groupId>
         <artifactId>netty-tcnative</artifactId>
         <version>1.1.30.Fork2</version>
-        <classifier>${os.detected.classifier}</classifier>
         <scope>compile</scope>
         <optional>true</optional>
       </dependency>
-
+  
       <!--
         Bouncy Castle - completely optional, only needed when:
         - you generate a temporary self-signed certificate using SelfSignedCertificate, and
@@ -825,6 +825,7 @@
           </execution>
         </executions>
       </plugin>
+        <!--
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>2.10</version>
@@ -853,6 +854,7 @@
           </dependency>
         </dependencies>
       </plugin>
+        -->
       <!-- Download the npn-boot.jar in advance to add it to the boot classpath. -->
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>

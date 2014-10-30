@@ -25,7 +25,7 @@ public class DiscardServerHandler extends SimpleChannelInboundHandler<Object> {
 
     @Override
     public void messageReceived(ChannelHandlerContext ctx, Object msg) {
-        // discard
+
     }
 
     @Override
